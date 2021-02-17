@@ -19,6 +19,8 @@ public class Menu {
         showMainMenu();
         char option = InputReader.readOption();
         boolean shouldExit = false;
+        
+       
         switch (option) {
             case '1':
                 quiz = QuizUIHandler.createQuiz();
@@ -32,11 +34,14 @@ public class Menu {
             case '4':
                 shouldExit = true;
                 break;
+            case '0':
+            	System.out.println("Invalid option");
+                break;
             default:
                 System.out.println("Invalid option");
                 break;
         }
-
+        
         System.out.println(System.lineSeparator());
         return shouldExit;
     }

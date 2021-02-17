@@ -10,10 +10,18 @@ public final class InputReader {
 
     public static String readLine() {
         System.out.print(INPUT_CURSOR);
-        return scanner.nextLine();
+       
+        	return scanner.nextLine();        	
+       
     }
 
     public static char readOption() {
+    	
+   
+ //   if(!readLine().isBlank()) {
         return readLine().trim().charAt(0);
+ //   }else {
+ //   	return '0';
+ //   }
     }
 }
